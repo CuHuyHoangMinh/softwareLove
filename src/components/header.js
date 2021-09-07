@@ -1,7 +1,7 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
-
+import HeaderLink from "./headerLink"
 const Header = ({ siteTitle }) => (
   <header
     style={{
@@ -14,7 +14,7 @@ const Header = ({ siteTitle }) => (
         margin: `0 auto`,
         maxWidth: 960,
         padding: `1.45rem 1.0875rem`,
-      }}
+      }}  
     >
       <h1 style={{ margin: 0 }}>
         <Link
@@ -27,6 +27,9 @@ const Header = ({ siteTitle }) => (
           {siteTitle}
         </Link>
       </h1>
+      <HeaderLink name='Page 2' link='/page-2/'/>
+      <HeaderLink name='TypeScript' link='/using-typescript/'/>
+
     </div>
   </header>
 )
